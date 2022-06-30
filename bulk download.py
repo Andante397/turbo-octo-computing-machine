@@ -1,36 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jun 30 10:40:00 2022
 
-@author: Acturus
-"""
 import pandas as pd;
 import urllib.request;
-
-'''k=list(url_cand_html)
-qw=str(k[1])
-name1=[]
-for i in range(len(qw)):
-    if qw[i]=='"':
-        for j in range(1,32):
-            name1.append(qw[i+j])
-        break
-
-name2=''.join(name1)
-
-
-import urllib.request
-
-k1='EVL_L2_2018001_00_007_02.fit.gz'
-k0='https://lasp.colorado.edu/eve/data_access/evewebdata/products/level2/'
-url=k0+k1
-print(url)
-#url = 'https://lasp.colorado.edu/eve/data_access/evewebdata/products/level2/2018/001/EVL_L2_2018001_00_007_02.fit.gz'
-
-       #https://lasp.colorado.edu/eve/data_access/evewebdata/products/level2/2017/253/EVS_L2_2017253_16_007_02.fit.gz'
-print("downloading with urllib")
-urllib.request.urlretrieve(url,k1)
-'''
 
 q1=pd.read_excel(io=r'D:xflare.xlsx',usecols=['date'])
 q2=pd.read_excel(io=r'D:xflare.xlsx',usecols=['peak'])
